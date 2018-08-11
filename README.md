@@ -1,7 +1,6 @@
 # Disk Defragmenter Simulator
 
-Disk defragmenter simulator re-organizes files on a simulated disk. The defragmenter minimizes the number of disk accesses and CPU
-time in order to achieve this. To simulate a disk, the program does not use more than eight million bytes of dynamic memory at any time.
+Disk defragmenter simulator re-organizes files on a simulated disk. The defragmenter minimizes the number of disk accesses and CPU time to achieve this. To simulate an efficient defragmenter, the program does not use more than eight million bytes of dynamic memory at any time.
 
 ### Description
 The program rearranges the disk blocks so that: 
