@@ -10,7 +10,7 @@ using namespace std;
 class DiskDrive;
 class DiskBlock;
 
-class DiskBlockInfo // CANONT ACCESS
+class DiskBlockInfo // CANNOT ACCESS
 {
   unsigned nextBlockID;
   unsigned short fileID;
@@ -27,7 +27,6 @@ class DiskBlock // readDiskBlock returns this object
 {
   friend class DiskDrive;
   DiskBlockInfo blockInfo;
-  char stuff[500];
   DiskBlock(DiskBlockInfo &blockInf) {blockInfo = blockInf;}
 public:
   DiskBlock(){}
@@ -78,7 +77,7 @@ public:
     disk[diskBlockID] = diskBlock->blockInfo;
     diskAccesses++;
   }  // copies diskBlockInfo
-  void check();    
+  void check();
 } ;  // DiskDrive class
 
 
